@@ -1,0 +1,24 @@
+@import "./Utility";
+
+/**** GENERAL STYLES ***/
+html{
+  font-size:16px;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  //background: #270e30 url("../public/images/bg_main.jpg")  center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;  
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}
+
+.appContainer{
+  background: $bg_dialogs;
+
+}
+
+
+
