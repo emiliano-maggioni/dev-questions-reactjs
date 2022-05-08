@@ -1,0 +1,45 @@
+@import "Utility.scss";
+
+.container{
+    background: $white_col;
+    overflow: hidden;
+    padding-top: 3.1rem;
+}
+
+.content{
+    @extend .overflowDef;
+    height: calc(100% - 3.1rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer{
+    display: flex;
+    padding:0rem 1rem 0.5rem 1rem;
+    flex:1 1 100%;
+    flex-direction: column;
+}
+.answer > a{
+    width: 100%;
+    padding-top: 40px;
+    margin-top: -40px;
+    visibility: hidden;
+}
+
+.answer:nth-child(odd){
+    background:$milk_col;
+}
+
+@media (min-width: 768px) {
+  
+    // .answer{ padding-top: 0rem;
+    
+    //     padding:$def_padding;
+    //  }
+    .answer > a{   height: 0rem; 
+        padding-top: 0px;
+        margin-top: 0px;   }
+    .container { padding-top: 0rem;   }
+
+}

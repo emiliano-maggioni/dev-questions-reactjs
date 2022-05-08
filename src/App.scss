@@ -7,17 +7,16 @@ html{
 
 body{
   font-family: 'Montserrat', sans-serif;
-  //background: #270e30 url("../public/images/bg_main.jpg")  center center no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100vw;  
+  width: 100%;  
   font-size: 0.9rem;
   line-height: 1.2rem;
+  color:$font_color_dark;
 }
 
-.appContainer{
-  background: $bg_dialogs;
-
+body *{
+  box-sizing: border-box;
 }
 
 

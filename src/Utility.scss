@@ -1,5 +1,21 @@
 /*********************************/
 /* VARIABLES */
-$bg_dialogs: red;
+$def_padding: 1rem;
+$white_col: #fff;
+$floralwhite_col: #FFF8F4;
+$azure_col: #D8E9F8;
+$azure2_col: #E6FCFC;
+$milk_col:#fdfcf9;
+$dark_col:#333;
+$grey_col:#c1c1c1;
+$font_color_dark: $dark_col;
+
+.overflowDef{
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
 
 
