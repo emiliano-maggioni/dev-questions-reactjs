@@ -28,7 +28,7 @@ const RightContent = () => {
 
 useEffect(()=>{
   //SET INTERVAL TO CHANGE DATA ORDER EVERY 2 MINUTES (THIS WILL CAUSE RETRIEVING NEW DATA)
-  setInterval(()=> { setOrderAsc((prev) => !prev) }, 1000 * 10);  
+  setInterval(()=> { setOrderAsc((prev) => !prev) }, 1000 * 120);  
 },[]);
 
 useEffect(()=>{
@@ -51,7 +51,7 @@ useEffect(()=>{
           </div>
       ))
       ) 
-      : (<p>Data not found</p>)
+      : (<p>Waiting for data...</p>)
     } 
     </section>
   );

@@ -9,7 +9,8 @@
 .question:first-letter {
     text-transform: uppercase;
   }
-.answer{
+.answer pre{
+  overflow: auto;
 }
 
 

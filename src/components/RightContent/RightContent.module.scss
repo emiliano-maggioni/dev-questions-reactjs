@@ -5,6 +5,7 @@
     padding:$def_padding;
     @extend .overflowDef;
 }
+.container h1 {  line-height: 2rem;  }
 
 .dataRow{
     width:100%;
@@ -12,6 +13,6 @@
     flex-direction: column;
     padding: 0.4rem;
 }
-.dataRow:nth-child(even){   background:$milk_col; }
+.dataRow:nth-child(even){   background:$floralwhite2_col; }
 .dataRow:hover{ opacity:0.85; }
 .dataRow span{  padding: 0.2rem 0rem; }
