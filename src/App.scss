@@ -1,0 +1,23 @@
+@import "./Utility";
+
+/**** GENERAL STYLES ***/
+html{
+  font-size:16px;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;  
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color:$font_color_dark;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+
+

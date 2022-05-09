@@ -1,0 +1,18 @@
+@import "Utility.scss";
+
+.container{
+    background: $floralwhite_col;
+    padding:$def_padding;
+    @extend .overflowDef;
+}
+.container h1 {  line-height: 2rem;  }
+
+.dataRow{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+.dataRow:nth-child(even){   background:$floralwhite2_col; }
+.dataRow:hover{ opacity:0.85; }
+.dataRow span{  padding: 0.2rem 0rem; }

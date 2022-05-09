@@ -1,0 +1,16 @@
+@import "Utility.scss";
+
+
+.question{
+    font-weight: 500;
+    font-size: 1.18rem;
+    line-height: 1.4rem;
+}
+.question:first-letter {
+    text-transform: uppercase;
+  }
+.answer pre{
+  overflow: auto;
+}
+
+

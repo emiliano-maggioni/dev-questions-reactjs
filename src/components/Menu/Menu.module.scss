@@ -1,0 +1,159 @@
+@import "Utility.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: $azure2_col;
+  height: 3.1rem;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 90;
+}
+
+.menuButtonContainer {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.menuButton,
+.menuButton::before,
+.menuButton::after {
+  display: block;
+  background-color: $grey_col;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menuButton::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menuButton::after {
+  content: '';
+  margin-top: 8px;
+}
+
+.mobileOpen .menuButtonContainer .menuButton::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+.mobileOpen .menuButtonContainer .menuButton {
+  background: rgba(255, 255, 255, 0);
+}
+
+.mobileOpen .menuButtonContainer .menuButton::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+.link {
+  background: $azure2_col;
+  color: $font_color_dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0rem 1.3rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.09rem;
+  font-weight: 400;
+  transition: all 0.26s linear;
+  user-select: none;
+  text-decoration: none;
+}
+
+.linkActive,
+.link:hover {
+  background: $white_col;
+  color: $font_color_dark;
+}
+
+.menuLabel {
+  display: none;
+}
+
+@media (max-width: 1150px) {
+
+  .link {
+    padding: 0rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+  .container {
+    padding: 0rem 2rem 0rem 1.2rem; 
+    position: fixed; 
+    top:0rem;  
+  }
+
+  .menuButtonContainer {
+    display: flex;
+  }
+
+  .menuLabel {
+    display: flex;
+  }
+
+  .menu {
+    position: absolute;
+    top: 3.1rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    max-height: 0px;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+  }
+
+  .menuToggle~.menu .link {
+    border: 1px solid $azure_col;
+    height: 3.4rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  /*  VISIBLE MENU RULES */
+  .mobileOpen .menu {
+    max-height: 100vh;
+  }
+
+  .link:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+}
