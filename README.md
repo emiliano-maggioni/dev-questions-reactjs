@@ -2,7 +2,7 @@
 
 Is a ReactJS test, done with typescript and other ReactJS libraries.
 
-It's responsive, works cross-browser and has two components: the left component has some Q & A about programming, the right component shows data repeatedly (every two minutes) from an API (and order these datas by title property).
+It's responsive, works cross-browser and has two components: the left component has some Q & A about programming, the right component shows data repeatedly (every two minutes) taken from an API (and order these datas by title property).
 
 ## Get started
 
