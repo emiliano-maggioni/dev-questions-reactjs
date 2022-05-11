@@ -46,7 +46,7 @@ const AnswersContainer = ({ idPage }: Props) => {
   return (<>
         <a id={idPage} >{idPage}</a>
         <p className={classes.question}>{questionText}</p>
-        <p className={classes.answer}>{answer}
+        <div className={classes.answer}>{answer}
         {(idPage == "promise_all") && (  <><pre>{`          
                 let firstpromise = Promise.resolve("Hola");
                 let secondpromise = Promise.resolve(12345);
@@ -57,7 +57,7 @@ const AnswersContainer = ({ idPage }: Props) => {
           `}</pre>
         En vez de firstpromise y secondpromise podriamos poner promises relacionadas a la respuesta de alguna llamada a una API por ejemplo.</>
         )}
-        </p>
+        </div>
       </>
   );
 }

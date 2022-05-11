@@ -1,0 +1,24 @@
+PRACTICA REACT:
+
+- Se pretende realizar el siguiente ejercicio práctico:
+
+1.- realizar una app en React con typescript (utilizar el transpilador que prefieras).
+2.- la app tendrá 2 componentes que cada uno ocupará el 50% del navegador:
+	2.1 componente izquierdo:
+		2.1.1 este componente tendrá un menú de navegación donde se mostrarán las respuestas a las siguientes preguntas:
+		2.1.2 ventajas de utilizar typescript e inconveninentes
+		2.1.3 por qué utilizar Redux?
+		2.1.4 diferentes métodos de autenticación y seguridad de peticiones entre el frontend y el backend. (puedes nombrar y breve descripción). Cuál consideras que es el mejor según tus preferencias y el porqué?
+		2.1.5 qué formas hay de almacenar en el navegador la información? por ejemplo un JWT? localstorage, cookies...?
+		2.1.6 promise.all() propón un escenario donde lo utilizarías
+		2.1.7 para qué sueles utilizar la librería rxjs? consideras que tiene algún inconveniente?
+		2.1.8 en qué te sueles fijar para optimizar tu código?
+		2.1.9 qué herramientas utilizas para testear tu código?
+	2.2 componente derecho:
+		2.2.1 debe mostrar la información que se obtenga al realizar una llamada a https://jsonplaceholder.typicode.com/todos
+		2.2.2 se debe utilizar fetch para realizarlo (entendiendo que axios o http2 son ya conocidas)
+		2.2.3 tras obtener los datos, se deben tratar de tal forma que se ordene el array teniendo en cuenta la longitud de la property "title"
+		2.2.4 cada 2 minutos debe realizar la llamada de nuevo y ordenarlo inversamente
+
+NOTAS:
+- se valora el uso de clases, interfaces, programación funcional, optimización, limpieza de código, comentarios...
