@@ -1,4 +1,4 @@
-# bcnc-reactjs
+# dev-questions-reactjs
 
 Is a ReactJS test, done with typescript and other ReactJS libraries.
 
